@@ -24,7 +24,7 @@ def prepareList():
 
 
 def getSearchResult():
-    return requests.get("https://www.googleapis.com/books/v1/volumes?q=" + st.session_state.keyword + "&countryCode=US").json()
+    return requests.get("https://www.googleapis.com/books/v1/volumes?q=" + st.session_state.keyword + "&country=US").json()
 
 
 def getSelectedCheckboxes():
