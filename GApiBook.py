@@ -141,7 +141,7 @@ def displayBooks():
                 if "thumbnail" in book.imageLinks:
                     thumbnail = book.imageLinks["thumbnail"]
             if len(book.authors) > 0:
-                authorName = book.authors[0]
+                authorName = book.authors
             with st.container():
                 # st.checkbox(book.title, key='dynamic_checkbox_' + book.googleId)
                 st.header(title)
