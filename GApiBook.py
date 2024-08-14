@@ -36,7 +36,7 @@ def getSelectedCheckboxes():
 def getAuthors(authors):
     returnValue: str = ""
     for author in authors:
-        returnValue += author + "|"
+        returnValue += author + ","
     # st.write(returnValue)
     return returnValue
 
