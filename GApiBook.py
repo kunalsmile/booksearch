@@ -17,6 +17,7 @@ st.text_input("Enter your search keyword", key="keyword")
 
 def prepareList():
     results = getSearchResult()
+    st.write(results)
     for item in results["items"]:
         book = populateBookModel(item)
         books.append(book)
