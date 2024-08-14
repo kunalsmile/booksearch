@@ -10,7 +10,7 @@ st.set_page_config(
     page_icon="book",
 )
 
-st.header("Book Aggregator")
+st.header("Book Search")
 
 st.text_input("Enter your search keyword", key="keyword")
 
