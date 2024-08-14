@@ -4,7 +4,7 @@ import streamlit as st
 from bookmodel import BookModel
 
 books = []
-st.write("1")
+
 st.set_page_config(
     page_title="Book Search",
     page_icon="book",
@@ -14,7 +14,7 @@ st.header("Book Aggregator")
 
 st.text_input("Enter your search keyword", key="keyword")
 
-
+st.write("1")
 def prepareList():
     results = getSearchResult()
     st.write(results)
