@@ -113,14 +113,14 @@ def populateBookModel(item):
         book.pageCount = volumeInfo["pageCount"]
     book.googleId = item["id"].strip()
 
-    if len(book.selfLink) > 0:
-        bookInfo = requests.get(book.selfLink).json()
-        volumeBookInfo = bookInfo["volumeInfo"]
-        if "imageLinks" in volumeBookInfo:
-            book.imageLinks = volumeBookInfo["imageLinks"]
-            # book.imageLinks = getImageLinks(volumeInfo["imageLinks"])
-        if "categories" in volumeBookInfo:
-            book.categories = volumeBookInfo["categories"]
+    # if len(book.selfLink) > 0:
+    #     bookInfo = requests.get(book.selfLink).json()
+    #     volumeBookInfo = bookInfo["volumeInfo"]
+    #     if "imageLinks" in volumeBookInfo:
+    #         book.imageLinks = volumeBookInfo["imageLinks"]
+    #         # book.imageLinks = getImageLinks(volumeInfo["imageLinks"])
+    #     if "categories" in volumeBookInfo:
+    #         book.categories = volumeBookInfo["categories"]
     return book
 
 
