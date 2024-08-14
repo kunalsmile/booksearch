@@ -14,10 +14,8 @@ st.header("Book Aggregator")
 
 st.text_input("Enter your search keyword", key="keyword")
 
-st.write("1")
 def prepareList():
     results = getSearchResult()
-    st.write(results)
     for item in results["items"]:
         book = populateBookModel(item)
         books.append(book)
