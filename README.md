@@ -9,7 +9,7 @@ pip install streamlit
 ```
 ## Demo
 This application is hosted in Streamlit community cloud.  
-Click here to access application: [Book Search]([https://booksearch.streamlit.app/])
+Click here to access application: [Book Search](https://booksearch.streamlit.app/)
 
 ## Built with
 
