@@ -151,7 +151,7 @@ def displayBooks():
                     if len(thumbnail) != 0:
                         st.image(thumbnail)
                     else:
-                        st.image("https://github.com/kunalsmile/booksearch/blob/main/cartoon-book-with-cute-face_673247-233.jpg")
+                        st.image("https://raw.githubusercontent.com/kunalsmile/booksearch/main/cartoon-book-with-cute-face_673247-233.jpg")
                 with author:
                     st.html("<b>Author: </b>" + authorName)
                     st.html("<b>Publisher: </b>" + book.publisher)
