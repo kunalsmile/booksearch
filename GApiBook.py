@@ -9,6 +9,11 @@ st.set_page_config(
     page_title="Book Search",
     page_icon="book",
 )
+@st.cache_data(ttl=86400)  # Cache expires every 24 hours
+def get_data():
+    return None
+
+get_data()
 
 st.header("Book Search")
 
